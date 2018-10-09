@@ -1,0 +1,17 @@
+<h2> {{ headline }} </h2>
+
+<h3>{{ tilte }}</h3>
+<div class="postInfo">
+    Post id: <span>{{ id }}</span> ||  Category: <span>{{ category }}</span> || Posted by: <span>{{ author }}</span> || posted on: <span>{{ create_at }}</span>
+    <img ng-src="{{ image }}">
+    <hr/>
+    <p>
+        {{ description }}
+    </p>
+    
+    <form action="">
+        <textarea placeholder="your comments" class="form-control" name="comments" id="comments" cols="70" rows="5"></textarea> <br/>
+        <button class="btn btn-success">comment</button>
+    </form>
+    
+</div>

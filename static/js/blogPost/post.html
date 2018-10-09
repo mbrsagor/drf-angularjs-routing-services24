@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+
+<div class="posts">
+    <article ng-repeat="post in postList">
+        
+        <h2>
+            <a href="#!/details/{{ post.id }}">{{ post.tilte }}</a>
+        </h2>
+        <img ng-src="{{ post.image }}">
+        <p>
+            Author: {{ post.author }} || Posted on:{{ post.create_at }} || Category: {{ post.category }} || {{ post.id }}
+        </p>
+        <p>
+            {{ post.description }}
+        </p>
+    </article>
+</div>
+
+
