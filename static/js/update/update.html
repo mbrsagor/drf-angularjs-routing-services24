@@ -1,11 +1,11 @@
-<h2>{{ headline }}</h2>
+<h2>Admin Say: {{ subTitle }}</h2>
 
 <div class="blogPost">
     <form enctype="multipart/form-data">
         <div class="row">
             <div class="col-lg-6">
                 <input type="text" placeholder="Post Title" ng-model="tilte" class="form-control" required>
-                <select ng-model="author" name="" id="name" class="form-control">
+                <select ng-model="author" name="author" id="name" class="form-control">
                     <option value="1">admin</option>
                     <option value="2">sagor</option>
                 </select>
@@ -19,6 +19,6 @@
             </div>
         </div>
         <br/>
-        <button type="submit" class="btn btn-success" ng-click="publish()">publish</button>
+        <button type="submit" class="btn btn-success" ng-click="update()">update</button>
     </form>
 </div>

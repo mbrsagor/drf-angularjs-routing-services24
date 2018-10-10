@@ -22,10 +22,4 @@ app.controller('operationCtrl', function($scope, $http){
             $scope.postList.splice(response.id, 1);
         });
     }
-
-    // Update data
-    $scope.update = function(){
-        console.log("Data has been update!!")
-    }
-
 });

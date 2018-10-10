@@ -13,7 +13,7 @@
             <td>{{ post.id }}</td>
             <td>{{ post.tilte }}</td>
             <td>{{ post.create_at }}</td>
-            <td><button class="btn btn-success btn-xs" ng-click="update($index)">Update</button></td>
+            <td><a href="#!/update/{{ post.id }}" class="btn btn-success btn-xs" >Update</a></td>
             <td><button class="btn btn-danger btn-xs" ng-click="remove(post.id)" >Delete</button></td>
         </tr>
     </tbody>

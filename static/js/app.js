@@ -19,8 +19,15 @@ var app = angular.module('serviceApp', ['ngRoute'])
         controller  : 'operationCtrl'
     })
     .when('/details/:id', {
-        // url         : 'details',
         templateUrl : 'static/js/details/details.html',
         controller  : 'detailsCtrl'
     })
+    .when('/update/:id', {
+        templateUrl : 'static/js/update/update.html',
+        controller  : 'updateCtrl'
+    })
+    .otherwise({
+        redirectTo: 'Sorry!! Page not found'
+    });
+
 });

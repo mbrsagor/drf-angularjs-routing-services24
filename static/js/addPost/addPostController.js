@@ -21,7 +21,6 @@ app.controller('addPost', function($scope, $http){
             headers: { 'Content-Type': 'application/json' }
         }).then(function(response){
             $scope.postList.push(response.data);
-            console.log(response.data)
             $scope.succeesMesage = "Data insert successfully";
         })
     }
