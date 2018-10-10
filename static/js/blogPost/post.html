@@ -11,7 +11,7 @@
             Author: {{ post.author }} || Posted on:{{ post.create_at }} || Category: {{ post.category }} || {{ post.id }}
         </p>
         <p>
-            {{ post.description }}
+            {{ post.description | limitTo : 300 }} ...
         </p>
     </article>
 </div>
