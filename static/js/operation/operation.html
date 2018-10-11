@@ -9,7 +9,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat="post in postList">
+        <tr ng-repeat="post in postList | orderBy: '-title'">
             <td>{{ post.id }}</td>
             <td>{{ post.tilte }}</td>
             <td>{{ post.create_at }}</td>

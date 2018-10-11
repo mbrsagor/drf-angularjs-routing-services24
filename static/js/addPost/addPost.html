@@ -21,4 +21,9 @@
         <br/>
         <button type="submit" class="btn btn-success" ng-click="publish()">publish</button>
     </form>
+    <br>
+    <div class="alert alert-success" if-ng="succeesMesage" >
+        <strong class="close"><a ng-click="closeBtn()" href="#">X</a></strong>
+        <p>{{ succeesMesage }}  </p>
+    </div>
 </div>

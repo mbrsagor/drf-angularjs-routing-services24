@@ -1,7 +1,7 @@
 <h1>{{ title }}</h1>
 
 <div class="posts">
-    <article ng-repeat="post in postList">
+    <article ng-repeat="post in postList | orderBy: '-tilte'">
         
         <h2>
             <a href="#!/details/{{ post.id }}">{{ post.tilte }}</a>

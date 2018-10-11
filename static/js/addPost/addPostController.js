@@ -25,4 +25,10 @@ app.controller('addPost', function($scope, $http){
         })
     }
 
+    // Message close button
+    $scope.closeBtn = function(){
+        console.log("close");
+        $scope.succeesMesage = "";
+    }
+
 });

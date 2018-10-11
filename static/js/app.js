@@ -26,8 +26,5 @@ var app = angular.module('serviceApp', ['ngRoute'])
         templateUrl : 'static/js/update/update.html',
         controller  : 'updateCtrl'
     })
-    .otherwise({
-        redirectTo: 'Sorry!! Page not found'
-    });
 
 });
